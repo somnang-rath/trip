@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dynamic Theme Variables */
+:root {
+  /* Primary Colors */
+  --color-primary: 99 102 241; /* indigo-500 */
+  --color-primary-dark: 79 70 229; /* indigo-600 */
+  --color-primary-light: 129 140 248; /* indigo-400 */
+  --color-primary-50: 238 242 255; /* indigo-50 */
+  --color-primary-100: 224 231 255; /* indigo-100 */
+  --color-primary-200: 199 210 254; /* indigo-200 */
+  --color-primary-300: 165 180 252; /* indigo-300 */
+  --color-primary-400: 129 140 248; /* indigo-400 */
+  --color-primary-500: 99 102 241; /* indigo-500 */
+  --color-primary-600: 79 70 229; /* indigo-600 */
+  --color-primary-700: 67 56 202; /* indigo-700 */
+  --color-primary-800: 55 48 163; /* indigo-800 */
+  --color-primary-900: 49 46 129; /* indigo-900 */
+
+  /* Secondary Colors */
+  --color-secondary: 107 114 128; /* gray-500 */
+  --color-secondary-dark: 75 85 99; /* gray-600 */
+  --color-secondary-light: 156 163 175; /* gray-400 */
+
+  /* Accent Colors */
+  --color-accent: 16 185 129; /* emerald-500 */
+  --color-accent-dark: 5 150 105; /* emerald-600 */
+  --color-accent-light: 52 211 153; /* emerald-400 */
+
+  /* Background Colors */
+  --color-background: 241 245 249; /* slate-100 — gives white cards visible contrast in light mode */
+  --color-background-dark: 15 23 42; /* slate-900 */
+  --color-background-secondary: 255 255 255; /* white */
+  --color-background-secondary-dark: 30 41 59; /* slate-700 */
+
+  /* Surface Colors */
+  --color-surface: 255 255 255; /* white */
+  --color-surface-dark: 26 26 46; /* custom dark surface */
+
+  /* Text Colors */
+  --color-text-primary: 15 23 42; /* slate-900 */
+  --color-text-primary-dark: 248 250 252; /* slate-50 */
+  --color-text-secondary: 100 116 139; /* slate-500 */
+  --color-text-secondary-dark: 148 163 184; /* slate-400 */
+  --color-text-muted: 148 163 184; /* slate-400 */
+  --color-text-muted-dark: 100 116 139; /* slate-500 */
+
+  /* Border Colors */
+  --color-border: 226 232 240; /* slate-200 */
+  --color-border-dark: 45 45 68; /* custom dark border */
+
+  /* Status Colors */
+  --color-success: 34 197 94; /* green-500 */
+  --color-warning: 245 158 11; /* amber-500 */
+  --color-error: 239 68 68; /* red-500 */
+  --color-info: 59 130 246; /* blue-500 */
+
+  /* Shadow */
+  --color-shadow: 0 0 0;
+  --color-shadow-opacity: 0.1;
+}
+
+/* Theme Variants */
+[data-theme="ocean"] {
+  --color-primary: 14 165 233; /* sky-500 */
+  --color-primary-dark: 2 132 199; /* sky-600 */
+  --color-primary-light: 56 189 248; /* sky-400 */
+  --color-primary-50: 240 249 255; /* sky-50 */
+  --color-primary-100: 224 242 254; /* sky-100 */
+  --color-primary-200: 186 230 253; /* sky-200 */
+  --color-primary-300: 125 211 252; /* sky-300 */
+  --color-primary-400: 56 189 248; /* sky-400 */
+  --color-primary-500: 14 165 233; /* sky-500 */
+  --color-primary-600: 2 132 199; /* sky-600 */
+  --color-primary-700: 3 105 161; /* sky-700 */
+  --color-primary-800: 7 89 133; /* sky-800 */
+  --color-primary-900: 12 74 110; /* sky-900 */
+
+  --color-accent: 20 184 166; /* teal-500 */
+  --color-accent-dark: 13 148 136; /* teal-600 */
+  --color-accent-light: 45 212 191; /* teal-400 */
+}
+
+[data-theme="sunset"] {
+  --color-primary: 245 101 101; /* red-400 */
+  --color-primary-dark: 220 38 38; /* red-600 */
+  --color-primary-light: 252 165 165; /* red-300 */
+  --color-primary-50: 254 242 242; /* red-50 */
+  --color-primary-100: 254 226 226; /* red-100 */
+  --color-primary-200: 254 202 202; /* red-200 */
+  --color-primary-300: 252 165 165; /* red-300 */
+  --color-primary-400: 248 113 113; /* red-400 */
+  --color-primary-500: 239 68 68; /* red-500 */
+  --color-primary-600: 220 38 38; /* red-600 */
+  --color-primary-700: 185 28 28; /* red-700 */
+  --color-primary-800: 153 27 27; /* red-800 */
+  --color-primary-900: 127 29 29; /* red-900 */
+
+  --color-accent: 251 191 36; /* amber-400 */
+  --color-accent-dark: 245 158 11; /* amber-500 */
+  --color-accent-light: 252 211 77; /* amber-300 */
+}
+
+[data-theme="forest"] {
+  --color-primary: 34 197 94; /* green-500 */
+  --color-primary-dark: 22 163 74; /* green-600 */
+  --color-primary-light: 74 222 128; /* green-400 */
+  --color-primary-50: 236 253 245; /* green-50 */
+  --color-primary-100: 209 250 229; /* green-100 */
+  --color-primary-200: 167 243 208; /* green-200 */
+  --color-primary-300: 110 231 183; /* green-300 */
+  --color-primary-400: 52 211 153; /* green-400 */
+  --color-primary-500: 34 197 94; /* green-500 */
+  --color-primary-600: 22 163 74; /* green-600 */
+  --color-primary-700: 21 128 61; /* green-700 */
+  --color-primary-800: 22 101 52; /* green-800 */
+  --color-primary-900: 20 83 45; /* green-900 */
+
+  --color-accent: 139 92 246; /* violet-500 */
+  --color-accent-dark: 124 58 237; /* violet-600 */
+  --color-accent-light: 167 139 250; /* violet-400 */
+}
+
+[data-theme="midnight"] {
+  --color-primary: 147 51 234; /* purple-600 */
+  --color-primary-dark: 124 58 237; /* purple-700 */
+  --color-primary-light: 168 85 247; /* purple-500 */
+  --color-primary-50: 250 245 255; /* purple-50 */
+  --color-primary-100: 243 232 255; /* purple-100 */
+  --color-primary-200: 233 213 255; /* purple-200 */
+  --color-primary-300: 216 180 254; /* purple-300 */
+  --color-primary-400: 196 181 253; /* purple-400 */
+  --color-primary-500: 168 85 247; /* purple-500 */
+  --color-primary-600: 147 51 234; /* purple-600 */
+  --color-primary-700: 126 34 206; /* purple-700 */
+  --color-primary-800: 107 33 168; /* purple-800 */
+  --color-primary-900: 88 28 135; /* purple-900 */
+
+  --color-accent: 236 72 153; /* pink-500 */
+  --color-accent-dark: 219 39 119; /* pink-600 */
+  --color-accent-light: 244 114 182; /* pink-400 */
+}
